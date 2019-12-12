@@ -2,7 +2,8 @@
 //this line makes PHP behave in a more strict way
 declare(strict_types=1);
 //we are going to use session variables so we need to enable sessions
-session_start();
+//session_start();
+
 function whatIsHappening() {
     echo '<h2>$_GET</h2>';
     var_dump($_GET);
@@ -14,14 +15,14 @@ function whatIsHappening() {
     var_dump($_SESSION);
 }
 //your products with their price.
-$products = [
+$food = [
     ['name' => 'Club Ham', 'price' => 3.20],
     ['name' => 'Club Cheese', 'price' => 3],
     ['name' => 'Club Cheese & Ham', 'price' => 4],
     ['name' => 'Club Chicken', 'price' => 4],
     ['name' => 'Club Salmon', 'price' => 5]
 ];
-$products = [
+$drinks = [
     ['name' => 'Cola', 'price' => 2],
     ['name' => 'Fanta', 'price' => 2],
     ['name' => 'Sprite', 'price' => 2],
